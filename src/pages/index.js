@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-export default function IndexPage() {
-  const { data } = this.props;
+export default function IndexPage(props) {
+  const { data } = props;
   const { edges: posts } = data.allMarkdownRemark;
 
   return (

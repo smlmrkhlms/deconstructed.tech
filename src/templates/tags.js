@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
-function TagRoute() {
-  const posts = this.props.data.allMarkdownRemark.edges;
+function TagRoute(props) {
+  const posts = props.data.allMarkdownRemark.edges;
   const postLinks = posts.map(post => (
     <li key={post.node.fields.slug}>
       <Link to={post.node.fields.slug}>
@@ -12,9 +12,9 @@ function TagRoute() {
     </li>
   ));
 
-  const { tag } = this.props.pathContext;
-  const { title } = this.props.data.site.siteMetadata;
-  const { totalCount } = this.props.data.allMarkdownRemark;
+  const { tag } = props.pathContext;
+  const { title } = props.data.site.siteMetadata;
+  const { totalCount } = props.data.allMarkdownRemark;
 
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
