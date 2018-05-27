@@ -33,11 +33,14 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "flow": "flow",
+    "flow:ci": "flow check",
+    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
     "serve": "gatsby serve",
     "start": "npm run develop"
   },
   "devDependencies": {
+    "flow-bin": "0.73.0",
     "prettier": "1.7.4"
   }
 }

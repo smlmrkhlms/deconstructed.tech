@@ -15,6 +15,9 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - run:
+          name: Flow
+          command: yarn run flow:ci
+      - run:
           name: Build
           command: yarn run build
       - save_cache:
