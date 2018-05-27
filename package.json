@@ -33,6 +33,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "flow": "flow",
+    "flow:ci": "flow check",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
     "serve": "gatsby serve",
     "start": "npm run develop"
