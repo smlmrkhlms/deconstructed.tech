@@ -1,5 +1,5 @@
-import React from 'react'
-import { v4 } from 'uuid'
+import React from 'react';
+import { v4 } from 'uuid';
 
 const Testimonials = ({ testimonials }) => (
   <div>
@@ -13,6 +13,6 @@ const Testimonials = ({ testimonials }) => (
       </article>
     ))}
   </div>
-)
+);
 
-export default Testimonials
+export default Testimonials;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Pricing = ({ data }) => (
   <div className="columns">
@@ -23,6 +23,6 @@ const Pricing = ({ data }) => (
       </div>
     ))}
   </div>
-)
+);
 
-export default Pricing
+export default Pricing;
