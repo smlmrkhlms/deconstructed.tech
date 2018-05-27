@@ -18,6 +18,9 @@ jobs:
           name: Flow
           command: yarn run flow:ci
       - run:
+          name: Lint
+          command: yarn run lint
+      - run:
           name: Build
           command: yarn run build
       - save_cache:
