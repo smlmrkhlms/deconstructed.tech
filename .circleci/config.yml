@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8.0
+    parallelism: 4
     steps:
       - checkout
       - restore_cache:
